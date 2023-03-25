@@ -6,14 +6,10 @@
 <div class="container">
     <div class="row">
         <div class="col-4 offset-4">
-            <div class="row d-flex justify-content-end my-2">
-                <div class="col-8">
-                    <a href="/todos/create" class="btn btn-primary justify-self-center">Create Todo</a>
-                </div>
-            </div>
+            <a href="/todos/create" class="btn btn-primary justify-self-center">Create Todo</a>
             @if (isset($todos))
             @foreach ($todos as $todo)
-            <div class="card my-1">
+            <div class="card">
                 <div class="card-header text-center bg-light">
                     {{ $todo->title }}
                 </div>

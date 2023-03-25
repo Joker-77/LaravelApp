@@ -13,7 +13,7 @@
             </div>
             @if (isset($todos))
             @foreach ($todos as $todo)
-            <div class="card my-1">
+            <div class="card">
                 <div class="card-header text-center bg-light">
                     {{ $todo->title }}
                 </div>
